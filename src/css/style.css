@@ -100,14 +100,12 @@ hr {
     -ms-user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .todo-container--checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/* Create a custom checkbox */
 .todo-container--label {
 	position: absolute;
     left: 0;
@@ -117,25 +115,20 @@ hr {
     border: 1px solid black;
 }
 
-
-/* When the checkbox is checked, add a blue background */
 .todo-container--checkbox input:checked ~ .todo-container--label {
     background-color: #2980b9;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .todo-container--label:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
 .todo-container--checkbox input:checked ~ .todo-container--label:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
 .todo-container--checkbox .todo-container--label:after {
     left: 9px;
     top: 5px;
@@ -153,7 +146,6 @@ hr {
     left: 40px;
     top: 3px;
 }
-
 
 .todo-container--list i {
 	position: relative;
